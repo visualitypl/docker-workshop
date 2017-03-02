@@ -17,7 +17,7 @@ Linux and Mac how to
 * Exercise 5, Links & Volumes, and why to have more than 1 container\(after lunch, 15:15\)
 * Exercise 6, docker compose\(maybe also ansible\)\(15:45\)
 * Exercise 7, run it on heroku / run it on your own vps / we can provide vps to them
-* Exercise 8, one another\(optional\)
+* Exercise 8, one another\(optional\) Docker with 3rd party, Travis, Codeship, who are supporting Docker, where we are going, some small thing \(maybe article\) about Kubernetes.
 
 More things
 
