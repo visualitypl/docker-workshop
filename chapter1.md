@@ -4,20 +4,20 @@ Presentation
 
 * Trade example, and why it's called as Container
 * Virtual Machine / Container
-* After presentation
+* After presentation\(11:15\)
 
-* Installing Docker
+* Installing Docker\(
 
 Linux and Mac how to
 
-* Exercises 1, ubuntu 16.04, and run bash in the container \(introduce docker images\)
-* Exercise 2, something running, a small rails app, or a nodejs app
-* Exercise 3, write your own dockerfile for an that's prepared by me
-* Exercise 4, push it to the registry\(public one\)
-* Exercise 5, Links & Volumes, and why to have more than 1 container
-* Exercise 6, docker compose\(maybe also ansible\)
-
-
+* Exercises 1, ubuntu 16.04, and run bash in the container \(introduce docker images\)\(11:30\)
+* Exercise 2, something running, a small rails app, or a nodejs app\(12:00\)
+* Exercise 3, write your own dockerfile for an that's prepared by me\(13:00\)
+* Exercise 4, push it to the registry\(public one\)\(13:15\)
+* Exercise 5, Links & Volumes, and why to have more than 1 container\(after lunch, 15:15\)
+* Exercise 6, docker compose\(maybe also ansible\)\(15:45\)
+* Exercise 7, run it on heroku / run it on your own vps / we can provide vps to them
+* Exercise 8, one another\(optional\)
 
 More things
 
