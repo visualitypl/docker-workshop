@@ -57,7 +57,7 @@ You are working on multiple projects which use different PostgreSQL versions 9.3
 
 Use Docker :\)
 
-Before: 5432 port must be open! Stop PostgreSQL server.
+### Before: 5432 port must be open! Stop PostgreSQL server.
 
 But let's learn some basics. Go to [https://hub.docker.com/explore/](https://hub.docker.com/explore/), scroll down and click postgres. This is a offical PostgresSQL image hosted on Docker Hub. You can notice that there are a lot of versions under "_Supported tags and respective Dockerfile links_" section.
 
@@ -76,7 +76,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 f3b98375a644        postgres:9.5        "docker-entrypoint..."   2 minutes ago       Up 2 minutes        5432/tcp            trusting_bose
 ```
 
-We should check if we can login to our new database. You can use `psql` command or GUI program. Default user and database is `postgres`  and password `mysecretpassword`. 
+We should check if we can login to our new database. You can use `psql` command or GUI program. Default user and database is `postgres`  and password `mysecretpassword`.
 
 ```
 root@docker-workshop:~# psql -h localhost -U postgres -d postgres
@@ -95,13 +95,13 @@ docker rm trusting_bose # remove container using container name
 docker run -d -p 5432:5432 postgres:9.5
 ```
 
-TODO
+Try again connect to postgresql server. Now it should work. 
 
 You task is:
 
 1. Run three docker containers with PostgreSQL image in versions 9.3, 9.4, 9.5
-2. Containers should run as background processes
-3. Each container should be named like: postgres9.3 etc
+2. Containers should run as background processes in a “detached” mode
+3. Each container should be named like: postgres9.3 et
 
 ## Exercise 3
 
