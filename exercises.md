@@ -76,7 +76,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 f3b98375a644        postgres:9.5        "docker-entrypoint..."   2 minutes ago       Up 2 minutes        5432/tcp            trusting_bose
 ```
 
-
+We should check if we can login to our new database. You can use `psql` command or GUI program.
 
 
 
@@ -85,7 +85,9 @@ You task is:
 1. Run three docker containers with PostgreSQL image in versions 9.3, 9.4, 9.5
 2. Containers should run as background processes
 3. Each container should be named like: postgres9.3 etc
-4. 
+
+
+
 ## Exercise 3
 
 **Goal: **Build docker image from existing source code.
