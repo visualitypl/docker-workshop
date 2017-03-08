@@ -37,7 +37,7 @@ docker run -it ubuntu bash
 
 Now you are logged in ubuntu container. Try some unix commands: `pwd`, `ps` or create file `touch test.txt`.
 
-To see all containers in you system type:
+To see all containers in your system type:
 
 ```
 docker ps -a
@@ -45,5 +45,19 @@ docker ps -a
 
 ## Exercise 2
 
-**Goal: **Learn more about run command and launch real web app.
+**Goal: **Learn more about run command and run PostgreSQL servers.
+
+> #### Problem
+>
+> You are working on multiple projects which use different PostgreSQL versions.
+
+
+
+Let's go to https://hub.docker.com/explore/, scroll down and click postgres. This is a offical PostgresSQL image for Docker. You can notice that there are a lot of versions.
+
+
+
+
+
+
 
