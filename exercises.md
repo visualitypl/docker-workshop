@@ -95,7 +95,7 @@ docker rm trusting_bose # remove container using container name generated automa
 docker run -d -p 5432:5432 postgres:9.5
 ```
 
-Try again connect to postgresql server. Now it should work. Moreover you can change default user, database and password by putting environment variables into container.
+Try again connect to postgresql server. Now it should work. Moreover you can change default user, database and password by putting environment variables into container \(option `-e`\). All those option are described in official postgres repo [https://hub.docker.com/\_/postgres/](https://hub.docker.com/_/postgres/)
 
 You task is:
 
@@ -108,7 +108,7 @@ You task is:
 
 **Goal: **Build docker image from existing source code.
 
-#### 
+
 
 
 
