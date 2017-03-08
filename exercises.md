@@ -57,7 +57,7 @@ You are working on multiple projects which use different PostgreSQL versions 9.3
 
 Use Docker :\)
 
-Before: 5432 port has to be open!
+Before: 5432 port must be open! Stop PostgreSQL server.
 
 But let's learn some basics. Go to [https://hub.docker.com/explore/](https://hub.docker.com/explore/), scroll down and click postgres. This is a offical PostgresSQL image hosted on Docker Hub. You can notice that there are a lot of versions under "_Supported tags and respective Dockerfile links_" section.
 
@@ -67,7 +67,7 @@ To run an image with a specific tag, you have to add `:tag_name` after image nam
 docker run -d postgres:9.5
 ```
 
-We used `-d` option. It tells to docker to run container as a background process. To be sure that this container is working, type: `docker ps.` We've used without `-a`  option, becase we want see only currently working containers. You should see something like this:
+We used `-d` option. It tells to docker to run container as a background process in a “detached” mode. To be sure that this container is working, type: `docker ps.` We've used without `-a`  option, because we want see only currently working containers. You should see something like this:
 
 ```
 root@docker-workshop:~# docker ps
@@ -76,17 +76,32 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 f3b98375a644        postgres:9.5        "docker-entrypoint..."   2 minutes ago       Up 2 minutes        5432/tcp            trusting_bose
 ```
 
-We should check if we can login to our new database. You can use `psql` command or GUI program.
+We should check if we can login to our new database. You can use `psql` command or GUI program. Default user and database is `postgres`  and password `mysecretpassword`. 
 
+```
+root@docker-workshop:~# psql -h localhost -U postgres -d postgres
 
+psql: could not connect to server: Connection refused
+        Is the server running on host "localhost" (127.0.0.1) and accepting
+        TCP/IP connections on port 5432?
+```
+
+The problem is that Docker run containers isolated from host network, so without binding container ports to the host we cannot connect to them. More: [https://docs.docker.com/engine/userguide/networking/default\_network/binding/](https://docs.docker.com/engine/userguide/networking/default_network/binding/). To solve this, stop previous container and run new one with binding port option. More: [https://docs.docker.com/engine/reference/run/\#expose-incoming-ports](https://docs.docker.com/engine/reference/run/#expose-incoming-ports)
+
+```
+docker stop f3b98375a644 # stop container using container id
+docker rm trusting_bose # remove container using container name
+
+docker run -d -p 5432:5432 postgres:9.5
+```
+
+TODO
 
 You task is:
 
 1. Run three docker containers with PostgreSQL image in versions 9.3, 9.4, 9.5
 2. Containers should run as background processes
 3. Each container should be named like: postgres9.3 etc
-
-
 
 ## Exercise 3
 
