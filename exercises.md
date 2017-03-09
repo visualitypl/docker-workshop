@@ -119,6 +119,8 @@ What Dockerfile should:
 * Run bundle install
 * Run rails server with binding to 0.0.0.0
 
+**Note: **
+
 ## Exercise 4
 
 **Goal: **Push your image do hub registry
