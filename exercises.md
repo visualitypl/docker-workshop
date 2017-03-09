@@ -110,5 +110,18 @@ You task is:
 
 
 
+Github source:
+
+You should use:
+
+* FROM
+* ADD
+
+
+
+## Exercise 4
+
+**Goal: **Push your image do hub registry
+
 
 
