@@ -101,19 +101,18 @@ Your task is:
 
 1. Run three docker containers with PostgreSQL image in versions 9.3, 9.4, 9.5  \(**Tip**: use different ports\)
 2. Containers should run as background processes in a “detached” mode
-3. Each container should be named like: postgres9.3 etc and has different user names
+3. Each container should be named like: postgres9.3 etc \(`--name option`\) and has different user names
 4. Check if you can login to each database.
 
 ## Exercise 3
 
-**Goal: **Build docker image from existing source code.
+**Goal: **Build docker image for Rails app.
 
-Github source:
+In this exercise you will build image for Rails app. To do that create a new rails app: `rails new rails-docker -T` 
 
-You should use:
+What Dockerfile should contain:
 
-* FROM
-* ADD
+* * ADD
 
 ## Exercise 4
 
