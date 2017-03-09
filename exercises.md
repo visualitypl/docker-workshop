@@ -59,9 +59,9 @@ Use Docker :\)
 
 ### Before: 5432 port must be open! Stop PostgreSQL server.
 
-But let's learn some basics. Go to [https://hub.docker.com/explore/](https://hub.docker.com/explore/), scroll down and click postgres. This is a offical PostgresSQL image hosted on Docker Hub. You can notice that there are a lot of versions under "_Supported tags and respective Dockerfile links_" section.
+But first let's learn some basics. Go to [https://hub.docker.com/explore/](https://hub.docker.com/explore/), scroll down and click postgres. This is a offical PostgresSQL image hosted on Docker Hub. You can notice that there are a lot of versions under "_Supported tags and respective Dockerfile links_" section.
 
-To run an image with a specific tag, you have to add `:tag_name` after image name, eg: `ubuntu:16:04`.  Now we are going to run PostgreSQL 9.5 container.
+To run an image with a specific tag, you have to add `:tag_name` after image name, eg: `ubuntu:16:04`.  In our case we are going to run PostgreSQL 9.5 container.
 
 ```
 docker run -d postgres:9.5
@@ -158,9 +158,5 @@ Try also create some tags and push them to Docker Hub.
 
 **Goal: **Run containers which are connected to each other.
 
-
-
-https://docs.docker.com/engine/userguide/networking/default\_network/dockerlinks/
-
-
+[https://docs.docker.com/engine/userguide/networking/default\_network/dockerlinks/](https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/)
 
