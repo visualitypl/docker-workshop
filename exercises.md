@@ -106,13 +106,13 @@ Your task is:
 
 ## Exercise 3
 
-**Goal: **Build docker image for Rails app.
+**Goal: **Build docker image for Rails app and run it.
 
 In this exercise you will build image for Rails app. To do that create a new rails app: `rails new rails-docker -T`. Got to new directory and create `Dockerfile` file.
 
-Example: https://docs.docker.com/engine/getstarted/step\_four/
+Example: [https://docs.docker.com/engine/getstarted/step\_four/](https://docs.docker.com/engine/getstarted/step_four/)
 
-Docker reference: https://docs.docker.com/engine/reference/builder/
+Docker reference: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
 
 What Dockerfile should:
 
@@ -123,6 +123,8 @@ What Dockerfile should:
 5. Run bundle install
 6. Copy all app files
 7. Run rails server with binding to 0.0.0.0
+
+After that build image and run it \(remember about port binding\).
 
 **Note: **Think why points 4, 5, 6 are in this order.
 
