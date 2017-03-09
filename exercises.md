@@ -94,7 +94,7 @@ The problem is that Docker run containers isolated from host network, so without
 
 ```
 docker stop f3b98375a644 # stop container using container id
-docker rm trusting_bose # remove container using container name generated automatically
+docker rm trusting_bose # remove container (you can also manage containers by their names)
 
 docker run -d -p 5432:5432 postgres:9.5
 ```
