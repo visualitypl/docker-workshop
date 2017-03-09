@@ -124,11 +124,23 @@ What Dockerfile should:
 6. Copy all app files
 7. Run rails server with binding to 0.0.0.0
 
-After that build image \(you can check if the images exists by command `docker images`\) and run it \(remember about port binding\). Go to the web browser and you should see text: "_Yay! You’re on Rails!"._
+After that, build image \(you can check if the images exists by command `docker images`\) and run it \(remember about port binding\). Go to the web browser and you should see text: "_Yay! You’re on Rails!"._
 
 **Note: **Think why points 4, 5, 6 are in this order.
 
 ## Exercise 4
 
 **Goal: **Push your image do hub registry
+
+1. Register in Docker Hub
+2. Create a repository 
+3. Push image
+
+https://docs.docker.com/engine/getstarted/step\_five/
+
+https://docs.docker.com/engine/reference/commandline/push/
+
+
+
+
 
