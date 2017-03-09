@@ -99,7 +99,7 @@ docker rm trusting_bose # remove container (you can also manage containers by th
 docker run -d -p 5432:5432 postgres:9.5
 ```
 
-Try again connect to postgresql server. Now it should work. Moreover you can change default user, database and password by putting environment variables into container \(option `-e`\). All those option are described in official postgres repo [https://hub.docker.com/\_/postgres/](https://hub.docker.com/_/postgres/)
+Try again connect to postgresql server. Now it should work. Moreover you can change default user, database and password by putting environment variables into container \(option `-e`\). All those options are described in official postgres repo [https://hub.docker.com/\_/postgres/](https://hub.docker.com/_/postgres/)
 
 #### Your task is:
 
