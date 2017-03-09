@@ -110,9 +110,11 @@ Your task is:
 
 In this exercise you will build image for Rails app. To do that create a new rails app: `rails new rails-docker -T`. Got to new directory and create `Dockerfile` file.
 
-Example: [https://docs.docker.com/engine/getstarted/step\_four/](https://docs.docker.com/engine/getstarted/step_four/)
+> Dockerfile reference: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
+>
+> Example: [https://docs.docker.com/engine/getstarted/step\_four/](https://docs.docker.com/engine/getstarted/step_four/)
 
-Docker reference: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
+
 
 What Dockerfile should:
 
@@ -128,19 +130,27 @@ After that, build image \(you can check if the images exists by command `docker 
 
 **Note: **Think why points 4, 5, 6 are in this order.
 
+#### **Extra task**
+
+Try run this app in production environment. You can define environment variables in Dockerfile. 
+
+**Remember**: options defined in `docker run` command will overwrite options in Dockerfile.
+
 ## Exercise 4
 
-**Goal: **Push your image do hub registry
+**Goal: **Push your image do Docker Hub
 
 1. Register in Docker Hub
 2. Create a repository 
 3. Push image
 
-https://docs.docker.com/engine/getstarted/step\_five/
+> Tutorial how to manage Docker Hub [https://docs.docker.com/engine/getstarted/step\_five/](https://docs.docker.com/engine/getstarted/step_five/)
 
-https://docs.docker.com/engine/reference/commandline/push/
+> More about `docker push` command [https://docs.docker.com/engine/reference/commandline/push/](https://docs.docker.com/engine/reference/commandline/push/)
 
 
+
+Exercise 5
 
 
 
