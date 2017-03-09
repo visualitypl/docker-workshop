@@ -86,7 +86,13 @@ psql: could not connect to server: Connection refused
         TCP/IP connections on port 5432?
 ```
 
-The problem is that Docker run containers isolated from host network, so without binding container ports to the host we cannot connect to them. More: [https://docs.docker.com/engine/userguide/networking/default\_network/binding/](https://docs.docker.com/engine/userguide/networking/default_network/binding/). To solve this, stop previous container and run new one with binding port option. More: [https://docs.docker.com/engine/reference/run/\#expose-incoming-ports](https://docs.docker.com/engine/reference/run/#expose-incoming-ports)
+The problem is that Docker run containers isolated from host network, so without binding container ports to the host we cannot connect to them. More:. To solve this, stop previous container and run new one with binding port.
+
+> More about network binding [https://docs.docker.com/engine/userguide/networking/default\_network/binding/](#)
+
+> More about exposing ports [https://docs.docker.com/engine/reference/run/\#expose-incoming-ports](https://docs.docker.com/engine/reference/run/#expose-incoming-ports)
+
+
 
 ```
 docker stop f3b98375a644 # stop container using container id
@@ -114,8 +120,6 @@ In this exercise you will build image for Rails app. To do that create a new rai
 >
 > Example: [https://docs.docker.com/engine/getstarted/step\_four/](https://docs.docker.com/engine/getstarted/step_four/)
 
-
-
 What Dockerfile should:
 
 1. Be based on Ruby image \(**Tip**: `FROM` instruction\)
@@ -132,7 +136,7 @@ After that, build image \(you can check if the images exists by command `docker 
 
 #### **Extra task**
 
-Try run this app in production environment. You can define environment variables in Dockerfile. 
+Try run this app in production environment. You can define environment variables in Dockerfile.
 
 **Remember**: options defined in `docker run` command will overwrite options in Dockerfile.
 
@@ -145,12 +149,8 @@ Try run this app in production environment. You can define environment variables
 3. Push image
 
 > Tutorial how to manage Docker Hub [https://docs.docker.com/engine/getstarted/step\_five/](https://docs.docker.com/engine/getstarted/step_five/)
-
+>
 > More about `docker push` command [https://docs.docker.com/engine/reference/commandline/push/](https://docs.docker.com/engine/reference/commandline/push/)
 
-
-
 Exercise 5
-
-
 
