@@ -104,8 +104,8 @@ Try again connect to postgresql server. Now it should work. Moreover you can cha
 #### Your task is:
 
 1. Run three docker containers with PostgreSQL image in versions 9.3, 9.4, 9.5  \(**Tip**: use different ports\)
-2. Containers should run as background processes in a “detached” mode
-3. Each container should be named like: postgres9.3 etc \(`--name` option\) and has different user names
+2. Containers should run as background processes in a “detached” mode.
+3. Each container should be named like: postgres9.3 etc \(`--name` option\) and has different user names.
 4. Check if you can login to each database.
 
 ## Exercise 3
@@ -122,11 +122,11 @@ What Dockerfile should:
 
 1. Be based on Ruby image \(**Tip**: `FROM` instruction\)
 2. Install nodejs depedency \(**Tip**: `RUN` instruction\)
-3. Create an app directory and make it as a workdir \(**Tip**: `WORKDIR`\)
-4. First copy only Gemfile and Gemfile.lock \(**Tip**: `COPY`\)
+3. Create an app directory and make it as a workdir \(**Tip**: `WORKDIR` instruction\)
+4. First copy only Gemfile and Gemfile.lock \(**Tip**: `COPY` instruction\)
 5. Run bundle install
 6. Copy all app files
-7. Run rails server with binding to 0.0.0.0
+7. Run rails server with binding to 0.0.0.0 \(**Tip**: `CMD` instruction\)
 
 After that, build image \(you can check if the images exists by command `docker images`\) and run it \(remember about port binding\). Go to the web browser and you should see text: "_Yay! You’re on Rails!"._
 
@@ -157,10 +157,4 @@ Try also create some tags and push them to Docker Hub.
 ## Exercise 5
 
 **Goal: **Run containers which are connected to each other.
-
-
-
-
-
-
 
