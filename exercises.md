@@ -97,7 +97,7 @@ docker run -d -p 5432:5432 postgres:9.5
 
 Try again connect to postgresql server. Now it should work. Moreover you can change default user, database and password by putting environment variables into container \(option `-e`\). All those option are described in official postgres repo [https://hub.docker.com/\_/postgres/](https://hub.docker.com/_/postgres/)
 
-You task is:
+Your task is:
 
 1. Run three docker containers with PostgreSQL image in versions 9.3, 9.4, 9.5  \(**Tip**: use different ports\)
 2. Containers should run as background processes in a “detached” mode
@@ -108,8 +108,6 @@ You task is:
 
 **Goal: **Build docker image from existing source code.
 
-
-
 Github source:
 
 You should use:
@@ -117,11 +115,7 @@ You should use:
 * FROM
 * ADD
 
-
-
 ## Exercise 4
 
 **Goal: **Push your image do hub registry
-
-
 
