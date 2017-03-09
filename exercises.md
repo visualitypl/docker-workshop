@@ -108,7 +108,7 @@ Your task is:
 
 **Goal: **Build docker image for Rails app.
 
-In this exercise you will build image for Rails app. To do that create a new rails app: `rails new rails-docker -T` 
+In this exercise you will build image for Rails app. To do that create a new rails app: `rails new rails-docker -T`. Got to new directory and create file Dockerfile.
 
 What Dockerfile should contain:
 
