@@ -124,11 +124,13 @@ What Dockerfile should:
 6. Copy all app files
 7. Run rails server with binding to 0.0.0.0
 
-After that build image and run it \(remember about port binding\).
+After that build image \(you can check if exists by command `docker images`\) and run it \(remember about port binding\).
 
 **Note: **Think why points 4, 5, 6 are in this order.
 
 ## Exercise 4
 
 **Goal: **Push your image do hub registry
+
+
 
