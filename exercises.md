@@ -105,7 +105,7 @@ Try again connect to postgresql server. Now it should work. Moreover you can cha
 
 1. Run three docker containers with PostgreSQL image in versions 9.3, 9.4, 9.5  \(**Tip**: use different ports\)
 2. Containers should run as background processes in a “detached” mode
-3. Each container should be named like: postgres9.3 etc \(`--name option`\) and has different user names
+3. Each container should be named like: postgres9.3 etc \(`--name` option\) and has different user names
 4. Check if you can login to each database.
 
 ## Exercise 3
@@ -152,7 +152,15 @@ Try run this app in production environment. You can define environment variables
 
 #### **Extra task**
 
-Try also create some tags and push them to Docker Hub. 
+Try also create some tags and push them to Docker Hub.
 
-Exercise 5
+## Exercise 5
+
+**Goal: **Run containers which are connected to each other.
+
+
+
+
+
+
 
