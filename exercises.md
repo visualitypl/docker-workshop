@@ -108,11 +108,16 @@ Your task is:
 
 **Goal: **Build docker image for Rails app.
 
-In this exercise you will build image for Rails app. To do that create a new rails app: `rails new rails-docker -T`. Got to new directory and create file Dockerfile.
+In this exercise you will build image for Rails app. To do that create a new rails app: `rails new rails-docker -T`. Got to new directory and create `Dockerfile` file.
 
-What Dockerfile should contain:
+What Dockerfile should:
 
-* * ADD
+* Be based on Ruby image \(**Tip**: `FROM` instruction\)
+* Install nodejs depedency \(Tip: RUN instruction\)
+* Create an app directory and make it as a workdir \(Tip: WORKDIR instruction\)
+* First COPY only Gemfile and Gemfile.lock
+* Run bundle install
+* Run rails server with binding to 0.0.0.0
 
 ## Exercise 4
 
