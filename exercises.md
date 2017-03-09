@@ -61,13 +61,13 @@ Use Docker :\)
 
 But let's learn some basics. Go to [https://hub.docker.com/explore/](https://hub.docker.com/explore/), scroll down and click postgres. This is a offical PostgresSQL image hosted on Docker Hub. You can notice that there are a lot of versions under "_Supported tags and respective Dockerfile links_" section.
 
-To run an image with a specific tag, you have to add `:tag_name` after image name, eg: `ubuntu:16:04`.  Now we are going run PostgreSQL 9.5 container.
+To run an image with a specific tag, you have to add `:tag_name` after image name, eg: `ubuntu:16:04`.  Now we are going to run PostgreSQL 9.5 container.
 
 ```
 docker run -d postgres:9.5
 ```
 
-We used `-d` option. It tells to docker to run container as a background process in a “detached” mode. To be sure that this container is working, type: `docker ps.` We've used without `-a`  option, because we want see only currently working containers. You should see something like this:
+We used `-d` option. It tells docker to run container as a background process in a “detached” mode. To be sure that this container is working, type: `docker ps`. We've used without `-a`  option, because we want see only currently working containers. You should see something like this:
 
 ```
 root@docker-workshop:~# docker ps
@@ -86,13 +86,11 @@ psql: could not connect to server: Connection refused
         TCP/IP connections on port 5432?
 ```
 
-The problem is that Docker run containers isolated from host network, so without binding container ports to the host we cannot connect to them. More:. To solve this, stop previous container and run new one with binding port.
+The problem is that Docker run containers isolated from host network, so without binding container ports to the host we cannot connect to them.  To solve this, stop and remove previous container and run new one with binding port.
 
 > More about network binding [https://docs.docker.com/engine/userguide/networking/default\_network/binding/](#)
-
+>
 > More about exposing ports [https://docs.docker.com/engine/reference/run/\#expose-incoming-ports](https://docs.docker.com/engine/reference/run/#expose-incoming-ports)
-
-
 
 ```
 docker stop f3b98375a644 # stop container using container id
@@ -103,7 +101,7 @@ docker run -d -p 5432:5432 postgres:9.5
 
 Try again connect to postgresql server. Now it should work. Moreover you can change default user, database and password by putting environment variables into container \(option `-e`\). All those option are described in official postgres repo [https://hub.docker.com/\_/postgres/](https://hub.docker.com/_/postgres/)
 
-Your task is:
+#### Your task is:
 
 1. Run three docker containers with PostgreSQL image in versions 9.3, 9.4, 9.5  \(**Tip**: use different ports\)
 2. Containers should run as background processes in a “detached” mode
@@ -114,7 +112,7 @@ Your task is:
 
 **Goal: **Build docker image for Rails app and run it.
 
-In this exercise you will build image for Rails app. To do that create a new rails app: `rails new rails-docker -T`. Got to new directory and create `Dockerfile` file.
+In this exercise you will build image for Rails app. To do that, create a new rails app: `rails new rails-docker -T`. Got to new directory and create `Dockerfile` file.
 
 > Dockerfile reference: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
 >
@@ -151,6 +149,10 @@ Try run this app in production environment. You can define environment variables
 > Tutorial how to manage Docker Hub [https://docs.docker.com/engine/getstarted/step\_five/](https://docs.docker.com/engine/getstarted/step_five/)
 >
 > More about `docker push` command [https://docs.docker.com/engine/reference/commandline/push/](https://docs.docker.com/engine/reference/commandline/push/)
+
+#### **Extra task**
+
+Try also create some tags and push them to Docker Hub. 
 
 Exercise 5
 
