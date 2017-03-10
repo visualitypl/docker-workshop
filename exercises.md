@@ -224,9 +224,9 @@ services:
 
 **Goal**: Share data container with host
 
+What will happen if the database container will be destroyed or you want to upgrade image without loosing data? You will lose database data. To avoid this situation, you can mount host directory as a data volume. If you see Dockerfile for PostgreSQL image https://github.com/docker-library/postgres/blob/a869eeccfb98c9653fca9f135f3bafa758c6f4f7/9.5/Dockerfile\#L62, you can notice that there is defined a volume data.
 
-
-
+> More about Docker volumes https://docs.docker.com/engine/tutorials/dockervolumes/
 
 
 
