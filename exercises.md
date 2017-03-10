@@ -162,15 +162,16 @@ In this exercise we will run Rails app with database in production environment \
 
 > More about PostgresSQL URIs [https://www.postgresql.org/docs/current/static/libpq-connect.html\#AEN45527](https://www.postgresql.org/docs/current/static/libpq-connect.html#AEN45527)
 
-To easily 
+In this scenario we don't want expose db container port to outside, but connect db to rails app inside docker network. Thanks to docker linking mechanism, containers can easily discover each other by using alias names.
 
-> More about linking containers https://docs.docker.com/engine/userguide/networking/default\_network/dockerlinks/\#connect-with-the-linking-system
+> More about linking containers [https://docs.docker.com/engine/userguide/networking/default\_network/dockerlinks/\#connect-with-the-linking-system](https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/#connect-with-the-linking-system)
 
 #### Your tasks:
 
 * Build image from existing code source
-* Run Postgresql server
-* Run blog app 
+* Run Postgresql server 
+* Run blog app \(remember about necessary environment variables, binding ports and of course linking\)
+* Go to http://localhost:3000 and you should be able to add new posts
 
 #### **Extra task**
 
