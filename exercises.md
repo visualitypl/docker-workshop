@@ -177,6 +177,8 @@ In this scenario we don't want expose db container port to outside, but connect 
 * Run blog app \(remember about necessary environment variables, binding ports and of course linking\)
 * Go to [http://localhost:8080](http://localhost:8080) and you should be able to add new posts
 
+**Note** Name alias for database to `db`
+
 #### **Extra task**
 
 Try the same but without linking mechanism \(use own created network\).
@@ -231,5 +233,6 @@ What will happen if the database container will be destroyed or you want to upgr
 ### You tasks:
 
 * Edit your previous docker compose file
-* TODO
+* Mount postgres volume to host
+* Run docker-compose
 
