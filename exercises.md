@@ -156,7 +156,31 @@ Try also create some tags and push them to Docker Hub.
 
 ## Exercise 5
 
-**Goal: **Run containers which are connected to each other.
+**Goal: **Run Rails app in production with connected database container
 
-[https://docs.docker.com/engine/userguide/networking/default\_network/dockerlinks/](https://docs.docker.com/engine/userguide/networking/default_network/dockerlinks/)
+In this exercise we will run Rails app with database in production environment \(run two containers\). Please download prepared blog Rails app from [https://github.com/visualitypl/docker-workshop-blog-app](https://github.com/visualitypl/docker-workshop-blog-app). This app connects to the database by `DATABASE_URL` env name \(see `config/database.yml`\). 
+
+> More about PostgresSQL URIs https://www.postgresql.org/docs/current/static/libpq-connect.html\#AEN45527
+
+In exercise 2 you learned that Docker uses own network, 
+
+#### Your tasks:
+
+* Build image from existing code source
+* Run Postgresql server
+* Run blog app 
+
+#### **Extra task**
+
+Try do the same but using 
+
+> More about network:
+>
+> https://docs.docker.com/engine/userguide/networking/
+>
+> https://docs.docker.com/engine/userguide/networking/work-with-networks/
+
+## Exercise 6
+
+**Goal: **Make Exercise 5 easier using Docker
 
