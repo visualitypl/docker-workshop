@@ -230,5 +230,6 @@ What will happen if the database container will be destroyed or you want to upgr
 
 ### You tasks:
 
-
+* Edit your previous docker compose file
+* TODO
 
