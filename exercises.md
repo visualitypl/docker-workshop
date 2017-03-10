@@ -175,7 +175,7 @@ In this scenario we don't want expose db container port to outside, but connect 
 * Build image from existing code source
 * Run Postgresql server 
 * Run blog app \(remember about necessary environment variables, binding ports and of course linking\)
-* Go to [http://localhost:](http://localhost:3000)8080 and you should be able to add new posts
+* Go to http://localhost:8080 and you should be able to add new posts
 
 #### **Extra task**
 
@@ -218,7 +218,7 @@ services:
 
 * Put to this file necessary configuration which you used in exercise 5
 * Run it! docker-compose up
-* Go again [http://localhost:3000](http://localhost:3000) and you should be able to add new posts
+* Go again to [http://localhost:](http://localhost:3000)8080 and check if it's correctly working
 
 
 
