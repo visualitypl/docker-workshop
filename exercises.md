@@ -175,7 +175,7 @@ In this scenario we don't want expose db container port to outside, but connect 
 * Build image from existing code source
 * Run Postgresql server 
 * Run blog app \(remember about necessary environment variables, binding ports and of course linking\)
-* Go to [http://localhost:3000](http://localhost:3000) and you should be able to add new posts
+* Go to [http://localhost:](http://localhost:3000)8080 and you should be able to add new posts
 
 #### **Extra task**
 
@@ -193,11 +193,32 @@ Try the same but without linking mechanism \(use own created network\).
 
 Imagine if you have 6 containers with a lot of options \(env names, links etc\) and want run. Whenever you want run those containers you have to run commands one by one with multiple options. It's hard. Docker Compse allows you to define all containers with configuration in one file and run all them by on command.
 
-> More about Docker Compse https://docs.docker.com/compose/overview/
+> More about Docker Compse [https://docs.docker.com/compose/overview/](https://docs.docker.com/compose/overview/)
+>
+> Example [https://docs.docker.com/compose/rails](https://docs.docker.com/compose/rails)
+>
+> Compose file reference [https://docs.docker.com/compose/compose-file/](https://docs.docker.com/compose/compose-file/)
 
-> Example https://docs.docker.com/compose/rails
+#### Your tasks:
 
-> Compose file reference https://docs.docker.com/compose/compose-file/
+* Install docker-compose
+* Create `docker-compose.yml` inside Rails app directory
+
+You should start from this
+
+```
+version: '2'
+services:
+  blog:
+    build: .
+    ...
+  db:
+    image: ...
+```
+
+* Put to this file necessary configuration which you used in exercise 5
+* Run it! docker-compose up
+* Go again [http://localhost:3000](http://localhost:3000) and you should be able to add new posts
 
 
 
