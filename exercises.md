@@ -144,7 +144,7 @@ Try run this app in production environment. You can define environment variables
 
 ## Exercise 4
 
-**Goal: **Push your image do Docker Hub
+**Goal: **Push your image to Docker Hub
 
 1. Register in Docker Hub
 2. Create a repository 
@@ -172,10 +172,10 @@ In this scenario we don't want expose db container port to outside, but connect 
 
 #### Your tasks:
 
-* Build image from existing code source
+* Build image from existing code source \(Dockerfile is already defined\)
 * Run Postgresql server 
 * Run blog app \(remember about necessary environment variables, binding ports and of course linking\)
-* Go to http://localhost:8080 and you should be able to add new posts
+* Go to [http://localhost:8080](http://localhost:8080) and you should be able to add new posts
 
 #### **Extra task**
 
@@ -191,7 +191,7 @@ Try the same but without linking mechanism \(use own created network\).
 
 **Goal: **Make Exercise 5 easier using Docker Compose
 
-Imagine if you have 6 containers with a lot of options \(env names, links etc\) and want run. Whenever you want run those containers you have to run commands one by one with multiple options. It's hard. Docker Compse allows you to define all containers with configuration in one file and run all them by on command.
+Imagine if you have 6 containers with a lot of options \(env names, links etc\) and want run. Whenever you want run those containers you have to run commands one by one with multiple options. It's hard. Docker Compse allows you to define all containers with configuration in one file and run all them by one command.
 
 > More about Docker Compse [https://docs.docker.com/compose/overview/](https://docs.docker.com/compose/overview/)
 >
@@ -219,6 +219,14 @@ services:
 * Put to this file necessary configuration which you used in exercise 5
 * Run it! docker-compose up
 * Go again to [http://localhost:](http://localhost:3000)8080 and check if it's correctly working
+
+## Exercise 7
+
+**Goal**: Share data container with host
+
+
+
+
 
 
 
