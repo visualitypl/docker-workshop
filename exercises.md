@@ -2,9 +2,9 @@
 
 ## Exercise 1
 
-**Goal: **run Docker container and play with bash
+**Goal:** run Docker container and play with bash
 
-First we are going to run **hello-world **container prepared by Docker Team. Open your terminal and type below command. See what will happen.
+First we are going to run **hello-world** container prepared by Docker Team. Open your terminal and type below command. See what will happen.
 
 ```bash
 docker run hello-world
@@ -218,15 +218,17 @@ services:
 
 * Put to this file necessary configuration which you used in exercise 5
 * Run it! docker-compose up
-* Go again to [http://localhost:](http://localhost:3000)8080 and check if it's correctly working
+* Go again to http://localhost:8080 and check if it's correctly working
 
 ## Exercise 7
 
 **Goal**: Share data container with host
 
-What will happen if the database container will be destroyed or you want to upgrade image without loosing data? You will lose database data. To avoid this situation, you can mount host directory as a data volume. If you see Dockerfile for PostgreSQL image https://github.com/docker-library/postgres/blob/a869eeccfb98c9653fca9f135f3bafa758c6f4f7/9.5/Dockerfile\#L62, you can notice that there is defined a volume data.
+What will happen if the database container will be destroyed or you want to upgrade image without loosing data? You will lose database data. To avoid this situation, you can mount host directory as a data volume. If you see Dockerfile for PostgreSQL image [https://github.com/docker-library/postgres/blob/a869eeccfb98c9653fca9f135f3bafa758c6f4f7/9.5/Dockerfile\#L62](https://github.com/docker-library/postgres/blob/a869eeccfb98c9653fca9f135f3bafa758c6f4f7/9.5/Dockerfile#L62), you can notice that there is defined a volume data. In this volume are stored databases, tables, records etc. So let's mount our host directory to this data volume.
 
-> More about Docker volumes https://docs.docker.com/engine/tutorials/dockervolumes/
+> More about Docker volumes [https://docs.docker.com/engine/tutorials/dockervolumes/](https://docs.docker.com/engine/tutorials/dockervolumes/)
+
+### You tasks:
 
 
 
