@@ -158,11 +158,13 @@ Try also create some tags and push them to Docker Hub.
 
 **Goal: **Run Rails app in production with connected database container
 
-In this exercise we will run Rails app with database in production environment \(run two containers\). Please download prepared blog Rails app from [https://github.com/visualitypl/docker-workshop-blog-app](https://github.com/visualitypl/docker-workshop-blog-app). This app connects to the database by `DATABASE_URL` env name \(see `config/database.yml`\). 
+In this exercise we will run Rails app with database in production environment \(run two containers\). Please download prepared blog Rails app from [https://github.com/visualitypl/docker-workshop-blog-app](https://github.com/visualitypl/docker-workshop-blog-app). This app connects to the database by `DATABASE_URL` env name \(see `config/database.yml`\).
 
-> More about PostgresSQL URIs https://www.postgresql.org/docs/current/static/libpq-connect.html\#AEN45527
+> More about PostgresSQL URIs [https://www.postgresql.org/docs/current/static/libpq-connect.html\#AEN45527](https://www.postgresql.org/docs/current/static/libpq-connect.html#AEN45527)
 
-In exercise 2 you learned that Docker uses own network, 
+To easily 
+
+> More about linking containers https://docs.docker.com/engine/userguide/networking/default\_network/dockerlinks/\#connect-with-the-linking-system
 
 #### Your tasks:
 
@@ -172,13 +174,13 @@ In exercise 2 you learned that Docker uses own network,
 
 #### **Extra task**
 
-Try do the same but using 
+Try the same but without linking mechanism \(use own created network\).
 
 > More about network:
 >
-> https://docs.docker.com/engine/userguide/networking/
+> [https://docs.docker.com/engine/userguide/networking/](https://docs.docker.com/engine/userguide/networking/)
 >
-> https://docs.docker.com/engine/userguide/networking/work-with-networks/
+> [https://docs.docker.com/engine/userguide/networking/work-with-networks/](https://docs.docker.com/engine/userguide/networking/work-with-networks/)
 
 ## Exercise 6
 
