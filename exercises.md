@@ -177,7 +177,7 @@ In this scenario we don't want expose db container port to outside, but connect 
 * Run blog app \(remember about necessary environment variables, binding ports and of course linking\)
 * Go to [http://localhost:8080](http://localhost:8080) and you should be able to add new posts
 
-**Note** Name alias for database to `db`
+**Note**: Name alias for database to `db`
 
 #### **Extra task**
 
