@@ -110,7 +110,7 @@ Try again connect to postgresql server. Now it should work. Moreover you can cha
 
 ## Exercise 3
 
-**Goal: **Build docker image for Rails app and run it.
+**Goal:** Build docker image for Rails app and run it.
 
 In this exercise you will build image for Rails app. To do that, create a new rails app: `rails new rails-docker -T`. Got to new directory and create `Dockerfile` file.
 
@@ -134,7 +134,7 @@ What Dockerfile should:
 
 After that, build image \(you can check if the images exists by command `docker images`\) and run it \(remember about port binding\). Go to the web browser and you should see text: "_Yay! You’re on Rails!"._
 
-**Note: **Think why points 4, 5, 6 are in this order.
+**Note:** Think why points 4, 5, 6 are in this order.
 
 #### **Extra task**
 
@@ -144,7 +144,7 @@ Try run this app in production environment. You can define environment variables
 
 ## Exercise 4
 
-**Goal: **Push your image to Docker Hub
+**Goal:** Push your image to Docker Hub
 
 1. Register in Docker Hub
 2. Create a repository 
@@ -160,7 +160,7 @@ Try also create some tags and push them to Docker Hub.
 
 ## Exercise 5
 
-**Goal: **Run Rails app in production with connected database container
+**Goal:** Run Rails app in production with connected database container
 
 In this exercise we will run Rails app with database in production environment \(run two containers\). Please download prepared blog Rails app from [https://github.com/visualitypl/docker-workshop-blog-app](https://github.com/visualitypl/docker-workshop-blog-app). This app connects to the database by `DATABASE_URL` env name \(see `config/database.yml`\).
 
@@ -189,7 +189,7 @@ Try the same but without linking mechanism \(use own created network\).
 
 ## Exercise 6
 
-**Goal: **Make Exercise 5 easier using Docker Compose
+**Goal:** Make Exercise 5 easier using Docker Compose
 
 Imagine if you have 6 containers with a lot of options \(env names, links etc\) and want run. Whenever you want run those containers you have to run commands one by one with multiple options. It's hard. Docker Compse allows you to define all containers with configuration in one file and run all them by one command.
 
