@@ -12,7 +12,7 @@ docker run hello-world
 
 > More information about above comand: [https://docs.docker.com/engine/getstarted/step\_two/](https://docs.docker.com/engine/getstarted/step_two/)
 
-Now let's play with Ubuntu docker image. For example to list root files in Ubuntu container, run `ls /`** **command:
+Now let's play with Ubuntu docker image. For example to list root files in Ubuntu container, run `ls /` command:
 
 ```
 docker run ubuntu ls /
