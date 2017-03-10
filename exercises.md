@@ -47,7 +47,7 @@ docker ps -a
 
 ## Exercise 2
 
-**Goal: **Learn more about managing containers.
+**Goal:** Learn more about managing containers.
 
 #### Problem
 
