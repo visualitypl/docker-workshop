@@ -10,7 +10,7 @@ First we are going to run **hello-world** container prepared by Docker Team. Ope
 docker run hello-world
 ```
 
-> More information about above comand: [https://docs.docker.com/engine/getstarted/step\_two/](https://docs.docker.com/engine/getstarted/step_two/)
+> More information about above comand [click here](https://docs.docker.com/engine/reference/commandline/run/).
 
 Now let's play with Ubuntu docker image. For example to list root files in Ubuntu container, run `ls /` command:
 
@@ -44,6 +44,8 @@ docker ps -a
 ```
 
 > More about `docker ps` here: [https://docs.docker.com/engine/reference/commandline/ps/](https://docs.docker.com/engine/reference/commandline/ps/)
+
+> Docker cheat sheet: [https://docs.docker.com/get-started/#recap-and-cheat-sheet](https://docs.docker.com/get-started/#recap-and-cheat-sheet)
 
 ## Exercise 2
 
@@ -88,7 +90,7 @@ psql: could not connect to server: Connection refused
 
 The problem is that Docker run containers isolated from host network, so without binding container ports to the host we cannot connect to them.  To solve this, stop and remove previous container and run new one with binding port.
 
-> More about network binding [https://docs.docker.com/engine/userguide/networking/default\_network/binding/](#)
+> More about network binding [https://docs.docker.com/engine/userguide/networking/default\_network/binding/](https://docs.docker.com/engine/userguide/networking/default\_network/binding/)
 >
 > More about exposing ports [https://docs.docker.com/engine/reference/run/\#expose-incoming-ports](https://docs.docker.com/engine/reference/run/#expose-incoming-ports)
 
@@ -116,7 +118,7 @@ In this exercise you will build image for Rails app. To do that, create a new ra
 
 > Dockerfile reference: [https://docs.docker.com/engine/reference/builder/](https://docs.docker.com/engine/reference/builder/)
 >
-> Example: [https://docs.docker.com/engine/getstarted/step\_four/](https://docs.docker.com/engine/getstarted/step_four/)
+> [Example](https://docs.docker.com/get-started/part2/#define-a-container-with-dockerfile)
 
 #### Your task
 
@@ -150,7 +152,7 @@ Try run this app in production environment. You can define environment variables
 2. Create a repository 
 3. Push image
 
-> Tutorial how to manage Docker Hub [https://docs.docker.com/engine/getstarted/step\_five/](https://docs.docker.com/engine/getstarted/step_five/)
+> [Tutorial how to manage Docker Hub](https://docs.docker.com/get-started/part2/#share-your-image)
 >
 > More about `docker push` command [https://docs.docker.com/engine/reference/commandline/push/](https://docs.docker.com/engine/reference/commandline/push/)
 
